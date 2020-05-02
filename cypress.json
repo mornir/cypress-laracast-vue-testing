@@ -3,5 +3,6 @@
   "supportFile": "tests/support/index.js",
   "testFiles": "**/*.spec.js*",
   "experimentalComponentTesting": true,
-  "componentFolder": "tests/components"
+  "componentFolder": "tests/components",
+  "integrationFolder": "tests/e2e"
 }
