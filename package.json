@@ -6,11 +6,13 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:components": "vue-cli-service test:components"
+    "test:components": "vue-cli-service test:components",
+    "test": "cypress open"
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "tailwindcss": "^1.4.4",
+    "moment": "^2.26.0",
+    "tailwindcss": "^1.4.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -19,8 +21,8 @@
     "@vue/cli-service": "^4.3.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "cypress": "^4.5.0",
-    "cypress-vue-unit-test": "^2.0.0",
-    "eslint": "^6.7.2",
+    "cypress-vue-unit-test": "^2.0.1",
+    "eslint": "^7.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.0.5",

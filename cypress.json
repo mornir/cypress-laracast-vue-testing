@@ -4,5 +4,6 @@
   "testFiles": "**/*.spec.js*",
   "experimentalComponentTesting": true,
   "componentFolder": "tests/components",
-  "integrationFolder": "tests/e2e"
+  "integrationFolder": "tests/e2e",
+  "baseUrl": "http://localhost:8080"
 }
