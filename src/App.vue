@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <Countdown :until="time" @finished="log" />
+    <Countdown :until="time" @finished="alert" />
+    <p v-if="finished">Do Stuff</p>
   </div>
 </template>
 
@@ -18,11 +19,12 @@ export default {
   data() {
     return {
       time: moment().add(10, 'seconds'),
+      finished: false,
     }
   },
   methods: {
-    log() {
-      console.log('child is finished!')
+    alert() {
+      this.finished = true
     },
   },
 }
