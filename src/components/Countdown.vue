@@ -1,10 +1,10 @@
 <template>
   <div>
     <div v-if="!finished">
-      <span>{{ remaining.days }} Days, </span>
-      <span>{{ remaining.hours }} Hours, </span>
-      <span>{{ remaining.minutes }} Minutes, </span>
-      <span>{{ remaining.seconds }} Seconds, </span>
+      <span>{{ remaining.days() }} Days, </span>
+      <span>{{ remaining.hours() }} Hours, </span>
+      <span>{{ remaining.minutes() }} Minutes, </span>
+      <span>{{ remaining.seconds() }} Seconds, </span>
       left...
     </div>
     <p v-else>{{ expiredText }}</p>
@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     finished() {
-      return this.remaining.total <= 0
+      return this.remaining <= 0
     },
     remaining() {
       let remaining = moment.duration(Date.parse(this.until) - this.now)
@@ -41,13 +41,7 @@ export default {
         this.$emit('finished')
       }
 
-      return {
-        total: remaining,
-        days: remaining.days(),
-        hours: remaining.hours(),
-        minutes: remaining.minutes(),
-        seconds: remaining.seconds(),
-      }
+      return remaining
     },
   },
   created() {
