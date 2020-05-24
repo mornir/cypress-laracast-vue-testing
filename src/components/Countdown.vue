@@ -16,8 +16,8 @@ import moment from 'moment'
 export default {
   props: {
     until: {
-      type: [String, Date],
-      default: null,
+      type: [String, Date, Object],
+      default: '',
       required: true,
     },
     expiredText: {
