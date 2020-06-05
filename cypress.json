@@ -5,5 +5,6 @@
   "testFiles": "**/*.spec.js*",
   "experimentalComponentTesting": true,
   "componentFolder": "tests/components",
-  "baseUrl": "http://localhost:8080"
+  "baseUrl": "http://localhost:8080",
+  "projectId": "zz2sn3"
 }
