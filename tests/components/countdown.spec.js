@@ -2,6 +2,7 @@
 
 import { mount } from 'cypress-vue-unit-test'
 import Countdown from '../../src/components/Countdown.vue'
+//import Countdown from '../../src/components/not-passing/Countdown2.vue'
 
 describe('CountDown', () => {
   beforeEach(() => {

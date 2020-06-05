@@ -36,17 +36,17 @@ export default {
     },
     remaining() {
       let remaining = moment.duration(Date.parse(this.until) - this.now)
+      if (remaining.seconds() <= 0) {
+        this.$emit('finished')
+      }
       return remaining
     },
   },
   created() {
     const interval = setInterval(() => {
       this.now = new Date()
-      if (this.remaining.seconds() <= 0) {
-        this.$emit('finished')
-        clearInterval(interval)
-      }
     }, 1000)
+    this.$on('finished', () => clearInterval(interval))
   },
 }
 </script>
