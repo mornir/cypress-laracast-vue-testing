@@ -4,6 +4,7 @@ const {
   onFileDefaultPreprocessor,
 } = require('cypress-vue-unit-test/dist/preprocessor/webpack')
 
-module.exports = (on) => {
-  on('file:preprocessor', onFileDefaultPreprocessor)
+module.exports = (on, config) => {
+  on('file:preprocessor', onFileDefaultPreprocessor(config))
+  return config
 }
