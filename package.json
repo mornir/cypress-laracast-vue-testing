@@ -13,22 +13,22 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "moment": "^2.27.0",
-    "tailwindcss": "^1.4.6",
-    "vue": "^2.6.11"
+    "tailwindcss": "^1.7.6",
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.8.1",
-    "@vue/cli-plugin-babel": "^4.4.6",
-    "@vue/cli-plugin-eslint": "^4.4.6",
-    "@vue/cli-service": "^4.4.6",
+    "@vue/cli-plugin-babel": "^4.5.4",
+    "@vue/cli-plugin-eslint": "^4.5.4",
+    "@vue/cli-service": "^4.5.4",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "cypress": "4.9.0",
-    "cypress-vue-unit-test": "^3.0.0",
-    "eslint": "^7.3.1",
+    "cypress": "5.1.0",
+    "cypress-vue-unit-test": "^3.5.1",
+    "eslint": "^7.8.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^2.0.5",
-    "vue-cli-plugin-cypress-experimental": "^0.0.5",
-    "vue-template-compiler": "^2.6.11"
+    "prettier": "^2.1.1",
+    "vue-cli-plugin-cypress-experimental": "^1.1.0",
+    "vue-template-compiler": "^2.6.12"
   }
 }
