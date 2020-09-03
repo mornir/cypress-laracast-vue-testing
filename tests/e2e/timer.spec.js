@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('Waiting', () => {
-  it('renders a countdown timer', () => {
+  it.only('renders a countdown timer', () => {
     cy.clock()
     cy.visit('/')
 
@@ -12,7 +12,7 @@ describe('Waiting', () => {
     cy.contains('Now Expired')
   })
 
-  it.only('should have focus', () => {
+  it('should have focus', () => {
     cy.visit('/')
     cy.focused().should('have.attr', 'data-cy', 'theField')
   })

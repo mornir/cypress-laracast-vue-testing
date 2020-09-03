@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint",
     "test:components": "vue-cli-service test:components ",
     "test": "cypress open",
-    "test:ci": "cypress run --browser chrome --headless"
+    "test:ci": "cypress run"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -17,6 +17,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.8.1",
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-plugin-eslint": "^4.4.6",
     "@vue/cli-service": "^4.4.6",
