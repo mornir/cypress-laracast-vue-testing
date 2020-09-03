@@ -14,6 +14,7 @@
 <script>
 import moment from 'moment'
 export default {
+  name: 'CountDown',
   props: {
     until: {
       type: [String, Date, Object],

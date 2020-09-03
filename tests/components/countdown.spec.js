@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
 import { mount } from 'cypress-vue-unit-test'
-//import Countdown from '../../src/components/Countdown.vue'
-import Countdown from '../../src/components/not-passing/Countdown.vue'
+import Countdown from '../../src/components/Countdown.vue'
+//import Countdown from '../../src/components/CountdownAlternate.vue'
 
 describe('CountDown', () => {
   beforeEach(() => {
